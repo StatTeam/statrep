@@ -1,0 +1,37 @@
+
+CREATE TABLE [Cliente]
+( 
+	[ID]                 char(18)  NOT NULL ,
+	[Nombre3]            char(18)  NULL ,
+	[Apellido65]         char(18)  NULL 
+)
+go
+
+CREATE TABLE [DEPARTMENTO]
+( 
+	[Dept_ID]            numeric  NOT NULL ,
+	[Dept_Description]   VARCHAR2(27)  NULL 
+)
+go
+
+CREATE TABLE [E_6]
+( 
+	[test]               char(18)  NOT NULL 
+)
+go
+
+CREATE TABLE [FUNCIONARIO]
+( 
+	[Emp_id]             numeric(8)  NOT NULL ,
+	[Emp_SS_Number]      char(10)  NULL ,
+	[Emp_Last_Name]      VARCHAR2(25)  NULL 
+)
+go
+
+ALTER TABLE [Cliente]
+	ADD CONSTRAINT [XPKCliente] PRIMARY KEY  CLUSTERED ([ID] ASC)
+go
+
+ALTER TABLE [E_6]
+	ADD CONSTRAINT [XPKE_6] PRIMARY KEY  CLUSTERED ([test] ASC)
+go
